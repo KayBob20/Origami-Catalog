@@ -10,13 +10,13 @@
     <!-- ----------------------------------------------------------------- -->
     <!-- About Your Site                                                   -->
     <!-- ----------------------------------------------------------------- -->
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
-    <title>Charadex</title>
-    <meta property="title" content="Charadex" />
+    <link rel="shortcut icon" type="image/png" href="assets/crane-favicon.png" />
+    <title>Origami Catalog</title>
+    <meta property="title" content="Origami Catalog" />
     <meta property="type" content="website" />
-    <meta property="url" content="https://www.charadex.com/" />
-    <meta property="image" content="assets/meta.png" />
-    <meta name="description" content="A tool for organizing small ARPGs and species.">
+    <meta property="url" content="https://www.origamicatalog.com/" />
+    <!-- <meta property="image" content="assets/meta.png" /> -->
+    <meta name="description" content="An origami website with video tutorials.">
 
     <!-- No AI scraping directives -->
     <meta name="robots" content="noai">
@@ -78,7 +78,15 @@
             ----------------------------------------------------------------- -->
             <div class="card p-md-5 p-4 mb-4">
 
-                <h3 class="mb-0"><a href="inventories.html">Player Inventories</a></h3>
+                <h3 class="mb-0"><a href="resources.html">Resources</a></h3>
+
+                <hr class="mt-4">
+
+                <div class="px-4 text-muted" style="line-height: normal;">
+                    <br>
+                    <p>Here is a small collection of resources that may help with your origami journey.</p>
+                    <br>
+                </div>
 
                 <!-- Faux Folders
                 <-- Remove this if you'd like to make your own buttons instead!
@@ -88,16 +96,14 @@
                     <div class="row no-gutters mx-n1"></div>
                 </div>
 
-                <!-- Filters -->
+
+                <!-- Search Bar -->
                 <div style="display:none;" id="charadex-filters">
                     <hr class="w-100 mb-4">
                     <div class="row no-gutters m-n1">
-
-                        <!-- Search Bar -->
-                        <div class="col-md col-9 p-1">
+                        <div class="col p-1">
                             <input class="form-control bg-faded search" type="search" placeholder="Search" id="search">
                         </div>
-
                     </div>
                 </div>
 
@@ -116,12 +122,11 @@
 
             <!-- Repeated Items Render Here
             ----------------------------------------------------------------- -->
-            <ul class="row no-gutters list list-unstyled m-n1"></ul>
+            <ul class="row no-gutters list list-unstyled m-n2"></ul>
 
         </div>
 
     </div>
-
 
 
     <!-- --------------------------------------------------------------------
@@ -129,7 +134,6 @@
     <-------------------------------------------------------------------- -->
     
     <div class="load-html" id="footer" data-source="includes/footer.html"></div>
-
 
 
     <!-- --------------------------------------------------------------------
@@ -142,61 +146,36 @@
 
         <!-- Gallery Items
         ------------------------------------------------------------------- -->
-        <li class="col-md-4 col-sm-6 p-1" id="charadex-entries">
-            <a class="card px-4 py-3 cardlink text-truncate" href="">
-                <h5 class="m-0"><span class="username"></span></h5>
-            </a>
+        <li class="col-12 p-2" id="charadex-entries">
+            <div class="card d-block p-4">
+                    
+                    <b><span class="question"></span></b>
+                    <hr>    
+                <div class="px-4 pt-2 text-pre answer"></div>
+                <hr>
+                <div class="row no-gutters small px-2 mb-n2">
+                    <div class="col-auto"><b>Tags</b></div>
+                    <div class="col text-right tags"></div>
+                </div>
+            </div>
         </li>
 
 
         <!-- Singular Item
         ------------------------------------------------------------------- -->
-        <li class="col-12 p-2" id="charadex-card">
-            <div class="card">
-
-                <!-- Header -->
-                <h2 class="card-header text-center p-4"><span class="text-capitalize username"></span>'s Inventory</h2>
-
-                <!-- Items -->
-                <div class="px-md-5 pb-md-5 pt-md-0 p-4" id="item-list"></div>
-
-                <!-- Item sections -->
-                <div class="d-none">
-
-                    <!-- Each section -->
-                    <div class="mt-md-5 mt-4" id="item-list-section">
-                        <h4 id="item-list-header"></h4>
-                        <div class="row no-gutters m-n2" id="item-list-row"></div>
-                    </div>
-
-                    <!-- Each section's items -->
-                    <div class="col-md-4 col-6 p-2" id="item-list-col">
-                        <div class="card d-block text-center bg-faded p-2">
-                            <img class="item-img img-fluid gallery-img" src="">
-                            <a class="btn btn-primary d-block mt-3 itemlink" href="">
-                                <span class="item"></span> x<span class="amount"></span>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
+        <!-- <li class="col-12 p-2" id="charadex-card">
+            <div class="card d-block p-4">
+                <b><span class="question"></span></b>
+                
+                <div class="px-4 pt-2 text-pre answer"></div>
                 <hr>
-
-                <div class="p-md-5 p-4">
-                    <h4>Transaction Log</h4>
-                    <div class="pl-4" id="log-table">
-                        <div class="d-none">
-                            <div class="row no-gutters" id="log-entry">
-                                <div class="col-md-3"><span class="timestamp"></span></div>
-                                <div class="col-md-9"><span class="reason"></span></div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row no-gutters small px-2 mb-n2">
+                    <div class="col-auto"><b>Tags</b></div>
+                    <div class="col text-right tags"></div>
                 </div>
-
             </div>
-        </li>
+        </li> -->
+
 
     </div>
 
@@ -216,7 +195,7 @@
     <!-- Charadex Script -->
     <script src="styles/config.js"></script>
     <script src="styles/charadex.js"></script>
-    <script>inventory(options.inventory);</script>
+    <script>charadexLarge(options.resources);</script>
 
 
 </body>

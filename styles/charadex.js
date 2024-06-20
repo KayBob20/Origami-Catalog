@@ -715,7 +715,7 @@ const frontPage = (options) => {
                 let designs = await fetchSheet(charadexInfo.masterlistSheetPage);
 
                 // Filter out any MYO slots, reverse and pull the first 4
-                let selectDesigns = designs.filter((i) => { return i.designtype != 'Two Colors' }).reverse().slice(0, charadexInfo.numOfDesigns);
+                let selectDesigns = designs.filter((i) => { return i.designtype != 'Rectangular Paper' }).reverse().slice(0, charadexInfo.numOfDesigns);
 
                 // Add cardlink
                 let cardKey = Object.keys(selectDesigns[0])[0];

@@ -17,7 +17,7 @@ let sheetPages = {
     items: "items",
     traits: "traits",
     prompts: "prompts",
-    faq: "faq",
+    resources: "resources",
     staff: "mods",
 
 }
@@ -135,14 +135,14 @@ let options = {
 
     /* FAQ
     /* --------------------------------------------------------------- */
-    faq: {
+    resources: {
     
-        sheetPage: sheetPages.faq,
+        sheetPage: sheetPages.resources,
     
         itemAmount: 24,
         itemOrder: "asc",
     
-        searchFilterParams: ['Tags'],
+        searchFilterParams: ['Tags', 'Question'],
     
     },
 

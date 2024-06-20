@@ -429,6 +429,8 @@ a:active {
   /* background-color: rgb(191, 210, 230); */
 
   min-width: 40%;
+
+  padding-top: 0;
 }
 
 .header-container {
@@ -473,8 +475,28 @@ a:active {
 .card-indicators {
   display: flex;
   justify-content: end;
-  /* background-color: red; */
-  transform: translateX(-14px) translateY(14px);
+  /* background-color: rgba(255, 0, 0, 0.284); */
+  transform: translateX(0px) translateY(0px);
+}
+
+.indicators {
+  /* border-width: var(--cd-card-border-width);
+  border-style: var(--cd-card-border-style);
+  border-color: var(--cd-card-border-color);
+
+  background-color: var(--cd-faded-background-color); */
+  padding: 12px 14px 8px 8px;
+  border-radius: calc(var(--cd-border-radius) / 1.5);
+}
+
+.big-card .indicators {
+  border-width: 0;
+  border-style: none;
+  border-color: none;
+
+  background-color: var(--cd-content-background-color) !important;
+  padding: 0;
+  border-radius: none;
 }
 
 .tnyspce {
@@ -527,7 +549,7 @@ a:active {
 }
 
 .card-indicators .fa-star {
-  padding-left: 0;
+  padding-left: 8px;
   color: #e6bc53;
 }
 
@@ -588,6 +610,24 @@ a:active {
   font-size: 1rem;
 }
 
+.resource-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: center;
+  transform: translateY(20px);
+  margin-right: 1rem;
+}
+
+.question {
+  /* background-color: #4c8ebd; */
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  transform: translateY(-20px);
+}
+
 @media only screen and (max-width: 768px) {
   .key {
     width: 100%;
@@ -636,6 +676,10 @@ a.badge.badge-primary:active  {
 /* ============================================================= */
 
 .form-control {
+  -webkit-appearance: none;  /* For Safari and Chrome */
+  -moz-appearance: none;     /* For Firefox */
+  appearance: none; 
+
   background-color: var(--cd-input-background-color) !important;
   color: var(--cd-input-text-color) !important;
   border-width: var(--cd-input-border-width) !important;
@@ -777,14 +821,14 @@ p:last-child {
 
 /* Combines search and its companion filter */
 #search-filter.form-control {
-  border-radius: var(--cd-border-radius) 0 0 var(--cd-border-radius) !important;
-  border-right: 0 !important;
+  border-radius: var(--cd-border-radius) !important;
+  /* border-right: 0 !important; */
 } 
 
 #search.filtered.form-control {
   margin-left: -.5rem;
   width: calc(100% + .5rem) !important;
-  border-radius: 0 var(--cd-border-radius) var(--cd-border-radius) 0 !important;
+  border-radius: var(--cd-border-radius) !important;
 }
 
 /* Loading Icon */
