@@ -628,6 +628,16 @@ a:active {
   transform: translateY(-20px);
 }
 
+.jobtitle, .fa-star {
+  padding: 2px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.startdate, .review-title {
+  color: var(--cd-link-text-color);
+}
+
 @media only screen and (max-width: 768px) {
   .key {
     width: 100%;
