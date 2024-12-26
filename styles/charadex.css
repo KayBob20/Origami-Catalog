@@ -638,6 +638,40 @@ a:active {
   color: var(--cd-link-text-color);
 }
 
+.review-pics {
+  max-width: 350px;
+}
+
+.modal-content {
+  padding: 0.5rem;
+  border-radius: calc(1.4 * var(--cd-border-radius));
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.309);
+  border: none;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+}
+
+.col .card {
+  overflow: hidden;
+}
+
+.g-4 > .col {
+  margin-bottom: 1rem; /* Ensures consistent spacing between stacked images */
+}
+
 @media only screen and (max-width: 768px) {
   .key {
     width: 100%;
@@ -649,6 +683,10 @@ a:active {
 
   .card-indicators .fa-solid {
     padding-left: 8px;
+  }
+
+  .review-pics {
+    max-width: 200px;
   }
 }
 
