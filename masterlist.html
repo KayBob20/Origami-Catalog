@@ -33,7 +33,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 
 
     <!-- ----------------------------------------------------------------- -->
@@ -81,58 +82,45 @@
 
                 <hr>
 
-                                <div class="key">
+                <div class="key">
 
-                                    <h2 class="header-text key-header">Key</h2>
+                    <h2 class="header-text key-header">Key</h2>
 
-                                    <hr>
-                                    <!-- Item -->
-                                    <div class="d-flex justify-content-between mb-2">
-                                        <i class="fa-solid fa-star"></i>
-                                        <b class="text-muted">Personal Favorites</b>
-                                    </div>
-                                         <!-- Item -->
-                                         <div class="d-flex justify-content-between mb-2">
-                                            <i class="fa-solid fa-scissors"></i>
-                                            <b class="text-muted">May Need Some Cutting</b>
-                                        </div>
-                                             <!-- Item -->
-                                    <div class="d-flex justify-content-between mb-2">
-                                        <i class="fa-solid fa-droplet"></i>
-                                        <b class="text-muted">May Need Some Glueing</b>
-                                    </div>
-                                         <!-- Item -->
-                                         <div class="d-flex justify-content-between mb-2">
-                                            <div><i class="fa-solid fa-2"></i><i class="fa-solid fa-plus"></i></div>
-                                            <b class="text-muted">Two or more Papers</b>
-                                        </div>
-                                    
-                                             <!-- Item -->
-                                    <div class="d-flex justify-content-between mb-2">
-                                        <div><i class="fa-solid fa-4"></i><i class="fa-solid fa-ellipsis-vertical"></i><i class="fa-solid fa-3" style="padding-left: 2px;"></i></div>
-                                        <b class="text-muted">Apect Ratio Required for Paper</b>
-                                    </div>
+                    <p>Tap or hover over icons for more info.</p>
 
-                                                   <!-- Item -->
-                                                   <div class="d-flex justify-content-between mb-2">
-                                                    <i class="fa-solid fa-link"></i>
-                                                    <b class="text-muted">Has Diagram</b>
-                                                </div>
-                                                
-                                                      <!-- Item -->
-                                                      <div class="d-flex justify-content-between mb-2">
-                                                        <i class="fa-solid fa-money-check-dollar"></i>
-                                                        <b class="text-muted">Paper is Dollar Bill Size</b>
-                                                    </div>
+                    <hr>
 
-                                                         <!-- Item -->
-                                                         <div class="d-flex justify-content-between mb-2">
-                                                            <i class="fa-solid fa-circle-exclamation"></i>
-                                                            <b class="text-muted">Has Important Notes</b>
-                                                        </div>
-                                                    
-                                </div>
-                
+                    <div class="key-items">
+                        <!-- Item -->
+                        <a href="#"><span class="fa-solid fa-star" data-toggle="tooltip" data-original-title="Personal Favorites"></span></a>
+                        <!-- Item -->
+                        <a href="#"><span class="fa-solid fa-scissors" data-toggle="tooltip" data-original-title="May Need Cutting"></span></a>
+                        <!-- Item -->
+                        <a href="#"><span class="fa-solid fa-droplet" data-toggle="tooltip" data-original-title="May Need Glueing"></span></a>
+                        <!-- Item -->
+                        <a href="#" data-toggle="tooltip" title="Needs Two or More Papers">
+                            <div><i class="fa-solid fa-2"></i><i class="fa-solid fa-plus"></i></div>
+                        </a>
+                        <!-- Item -->
+                        <a href="#" data-toggle="tooltip" data-original-title="Aspect Ratio for Paper">
+                            <div><i class="fa-solid fa-4"></i><i class="fa-solid fa-ellipsis-vertical"></i><i class="fa-solid fa-3" style="padding-left: 2px;"></i></div>
+                        </a>
+                        <!-- Item -->
+                        <a href="#"><span class="fa-solid fa-video-slash" data-toggle="tooltip" data-original-title="No Video"></span></a>
+                        <!-- Item -->
+                        <a href="#"><span class="fa-solid fa-link" data-toggle="tooltip" data-original-title="Has Diagram"></span></a>
+                        <!-- Item -->
+                        <a href="#" data-toggle="tooltip" title="Diagram Locked">
+                            <div><i class="fa-solid fa-lock" style="padding-right: 4px;"></i><i class="fa-solid fa-link"></i></div>
+                        </a>
+                        <!-- Item -->
+                        <a href="#"><span class="fa-solid fa-money-check-dollar" data-toggle="tooltip" data-original-title="Dollar Sized Paper"></span></a>
+                        <!-- Item -->
+                        <a href="#"><span class="fa-solid fa-circle-exclamation" data-toggle="tooltip" data-original-title="Important Notes"></span></a>
+                    </div>
+
+                </div>
+
 
                 <!-- Faux Folders
                 <-- Remove this if you'd like to make your own buttons instead!
@@ -145,7 +133,7 @@
                 <!-- Filters -->
                 <div style="display:none;" id="charadex-filters">
                     <hr class="w-100 mb-4">
-                    <div class="row no-gutters m-n1">
+                    <div class="search-bar-row">
 
                         <!-- Custom Filter -->
                         <div class="col-md-4 col-12 p-1" style="display: none;">
@@ -157,10 +145,8 @@
                             <select class="form-control bg-faded" id="search-filter"></select>
                         </div> -->
 
-
-<div style="width: 10px;"></div>
                         <!-- Search Bar -->
-                        <div class="col-md col-9 p-1">
+                        <div class="col-md col-12 p-1">
                             <input class="form-control bg-faded search" type="search" placeholder="Search" id="search">
                         </div>
 
@@ -170,7 +156,7 @@
                 <!-- Pagination -->
                 <div style="display: none;" id="charadex-pagination">
                     <hr class="mb-4 mt-4">
-                    <div class="nav d-flex justify-content-center mb-n4">
+                    <div class="nav d-flex justify-content-center">
                         <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
                         <ul class="pagination pagination-top justify-content-center m-0"></ul>
                         <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
@@ -216,7 +202,7 @@
 
         <!-- Faux Folder Buttons
         ------------------------------------------------------------------- -->
-        <div class="col-lg-3 col-md-4 col-sm-6 p-1" id="charadex-filter-buttons">
+        <div class="col-lg-3 col-md-4 col-sm-4 col-6 p-1" id="charadex-filter-buttons">
             <a class="btn btn-primary d-block" href=""></a>
         </div>
 
@@ -229,7 +215,7 @@
                 <div class="card-indicators">
                     <span class="indicators"></span>
                 </div>
-                                 
+
 
                 <h5 class="card-header text-center">
                     <span class="title"></span>
@@ -242,11 +228,11 @@
                 </h5>
                 <div class="card-body d-flex flex-fill" style="padding-top: 0px;">
 
-        <!-- Header -->
-        
-            <!-- <a class="cardlinkalt" href=""><span class="title"></span></a>
+                    <!-- Header -->
+
+                    <!-- <a class="cardlinkalt" href=""><span class="title"></span></a>
                 <span><span class="difficulty"></span></span> -->
-        
+
 
                     <img class="card-images image img-fluid m-auto" src="" oncontextmenu="return false">
                 </div>
@@ -264,28 +250,28 @@
 
                 <!--Main Info -->
                 <div class="px-md-5 pt-md-5 p-4">
-                    
+
                     <!-- Character Info -->
                     <div class="row no-gutters big-card">
 
                         <div class="card-indicators card-icons">
-                                <span class="indicators"></span>
+                            <span class="indicators"></span>
                         </div>
                         <div class="header-container">
-                            
+
                             <!-- Image -->
                             <div class="ml-card-img">
                                 <div class="mx-auto w-100 text-center" oncontextmenu="return false">
                                     <img class="image img-fluid" src="">
                                 </div>
                             </div>
-                                            <!-- Header -->
-                                            <h2 class="card-header header-text stars">
-                                                <a class="cardlinkalt" href=""><span class="title"></span></a>
-                                                    <span><span class="difficulty"></span></span>
-                                                <hr style="margin-top: 10px; transform: translateX(-16px); width: calc(100% + 16px);">
-                                            </h2>
-                                            
+                            <!-- Header -->
+                            <h2 class="card-header header-text stars">
+                                <a class="cardlinkalt" href=""><span class="title"></span></a>
+                                <span><span class="difficulty"></span></span>
+                                <hr style="margin-top: 10px; transform: translateX(-16px); width: calc(100% + 16px);">
+                            </h2>
+
                         </div>
 
                         <div style="height: 32px; color:rgba(255, 255, 255, 0)">more space mmm</div>
@@ -298,7 +284,7 @@
                               </div> -->
 
                             <!-- Item -->
-                                <span class="video" ></span>
+                            <span class="video"></span>
 
                             <!-- Item -->
                             <!-- <div class="d-flex justify-content-between mb-2">
@@ -345,8 +331,8 @@
                                 <div class="pl-3 text-pre notes"></div>
                             </div>
 
-                                <hr>
-                                     <!-- Item -->
+                            <hr>
+                            <!-- Item -->
                             <div class="">
                                 <b class="text-muted">Gallery</b>
                                 <div class="gallery"></div>
@@ -416,7 +402,7 @@
     <!-- ----------------------------------------------------------------- -->
     <!-- JS                                                                -->
     <!-- ----------------------------------------------------------------- -->
-    
+
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
@@ -429,7 +415,17 @@
     <!-- Charadex Script -->
     <script src="styles/config.js"></script>
     <script src="styles/charadex.js"></script>
-    <script>masterlist(options.masterlist);</script>
+    <script>
+        masterlist(options.masterlist);
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip({
+                placement: 'top'
+            });
+        });
+    </script>
 
 </body>
 
