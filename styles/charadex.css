@@ -405,7 +405,7 @@ a:active {
 }
 
 .header-container {
-    /* background-color: rgb(241, 169, 169); */
+    /* transform: translateY(-32px); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -416,13 +416,12 @@ a:active {
     /* background-color: #4c8ebd; */
     margin-right: 30px;
     /* transform: translateX(-30%); */
-    width: 16%;
+    width: 30%;
 }
 
 .header-text {
     padding: 0px;
     padding-top: 16px;
-    padding-left: 16px;
     /* padding-left: 0px;
   padding-right: 0px; */
     /* transform: translateX(-30%); */
@@ -559,7 +558,8 @@ a:active {
 .fa-2,
 .fa-3,
 .fa-4,
-.fa-plus {
+.fa-plus,
+.fa-images {
     color: var(--cd-primary-color);
 }
 
@@ -590,6 +590,8 @@ a:active {
 
 .video {
     display: flex;
+    flex-direction: column;
+    gap: 16px;
     align-items: center;
     justify-content: center;
     font-size: 1.4rem;
@@ -682,6 +684,14 @@ input[type="reset"] {
     }
     .review-pics {
         max-width: 200px;
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
+    
+    .ml-card-img {
+        width: 60%;
     }
 }
 
@@ -881,6 +891,31 @@ p:last-child {
     max-width: 950px !important;
 }
 
+@media (max-width: 575px) {
+    .card-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-body {
+        padding-left: 0px;
+    }
+    .card-line {
+        display: none;
+    }
+    .card-header-gallery {
+        width: 860px;
+    }
+    /* this will change cards to display horizontally on mobile */
+}
+
+@media (max-width: 370px) {
+    .card-header-gallery {
+        width: 1200px;
+    }
+    /* this will change cards to display horizontally on mobile */
+}
+
 
 /* Prevents awkward load in stutter */
 
@@ -888,13 +923,13 @@ p:last-child {
     min-height: calc(10px + 2.5rem);
 }
 
-#charadex-gallery .list .card-body img {
+/* #charadex-gallery .list .card-body img {
     max-height: 200px;
 }
 
 .gallery-img {
     max-height: 150px;
-}
+} */
 
 
 /* Combines search and its companion filter */
